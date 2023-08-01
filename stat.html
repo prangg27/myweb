@@ -1,87 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+   <title>home</title>
+    <link rel="stylesheet" href="stat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY SKILL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
-    <style>
-        h1{
-            font-weight: bold;
-            font-family: 'Dosis', sans-serif;
-            text-align: center;
-            color: midnightblue;
-        }
-        h2{
-            font-weight: bold;
-            font-family: 'Dosis', sans-serif;
-            text-align: center;
-            color: midnightblue;
-        }
-        h3{
-            text-align: center;
-            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-            color: midnightblue;
-        }
-        a{
-            font-family: 'Dosis', sans-serif;
-            text-decoration: none;
-        }
-        a:link{
-            color: midnightblue;
-        }
-        a:visited{
-            color: midnightblue;
-        }
-        a:hover{
-            background-color: goldenrod;
-            color: midnightblue;
-        }
-        li{
-            display: inline;
-        }
-        li{
-            padding-right: 20px;
-        }
-        .textTH{
-            font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-            color: midnightblue;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-        }
-    </style>
-    
 </head>
 <body>
-    <ul style = "margin-left: 1100px;">
-        <li><a href="./index.html">home</a></li>
-        <li><a href="https://github.com/prangg27" target="_blank">github</a></li>
-        <li><a href="./experience.html" >experience</a></li>
-        <li><a href="./skill.html" >skill</a></li>
-        <li><a href="./project.html" >project</a></li>
-    </ul>
-    <h1>Assignment 1</h1>
+    <nav>
+        <div class="logo">Papatsorn</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="https://github.com/prangg27" target="_blank">github</a></li>
+          <li><a href="./experience.html" >experience</a></li>
+          <li><a href="./skill.html" >about</a></li>
+          <li><a href="./project.html" >project</a></li>
+        </ul>
+      </nav>
+    <h1><br>Assignment 1</h1>
     <h2>Random Variable</h2>
     <h3>เลือกตัวแปรสุ่มที่จะนำมาวิเคราะห์</h3>
     <p style = "margin-left: 40px;" class = "textTH"> <br><b>ให้ x แทนจำนวนเสื้อผ้าแบรนด์ Uniqlo ที่หลุด qc ในแต่ละวัน</b> <br>
     เนื่องจากเสื้อผ้าแบรนด์ Uniqlo ที่หลุด qc ในแต่ละวันมีจำนวนไม่เท่ากันขึ้นอยู่กับปัจจัยอื่นๆ เช่น ความผิดพลาด
-    ของเครื่องจักร หรือ คุณภาพของเส้นด้ายที่ใช้ทำเสื้อผ้า เป็นต้น<hr></p>
-    <h1>Assignment 2</h1>
+    ของเครื่องจักร หรือ คุณภาพของเส้นด้ายที่ใช้ทำเสื้อผ้า เป็นต้น<br></p>
+    <h1><br>Assignment 2</h1>
     <h2>Discrete random variable</h2>
     <h3>วิเคราะห์ตัวแปรสุ่มว่าเป็นตัวแปรต่อเนื่องหรือตัวแปรไม่ต่อเนื่อง</h3>
     <p style = "margin-left: 40px;" class = "textTH"> <br><b>Range(x) : {0,1 ,2,...,16,000,000}</b><br>Range(x) คือจํานวนเสื้อผ้าแบรนด์ Uniqlo
     ที่หลุด qc ในแต่ละวัน จากข้อมูลในเว็บ Uniqlo สามํารถผลิตเสื้อผ้าได้เฉลี่ย 600 ล้านชิ้นต่อปีหรือ16ล้านชิ้นต่อวัน 
     <img src="stat/uni1.png">
-    <h1><hr>Assignment 3</h1>
+    <h1><br>Assignment 3</h1>
     <p style = "margin-left: 40px;" class = "textTH"> <br><b>Response RV</b> : จำนวนเสื้อผ้าแบรนด์ Uniqlo ที่หลุด qc<br>
         <b>Experimental Unit </b> : จำนวนเสื้อผ้าแบรนด์ Uniqlo ที่หลุด qc ในแต่ละวัน<br>
         <b>Factor </b> : ชนิดของผ้า เครื่องจักร สีของผ้า เส้นใยของผ้า<br>
@@ -90,7 +43,9 @@
         2. ผ้าสีอ่อน, ผ้าสีเข้ม<br>
         3. ผ้าทอ, ผ้าถัก, ผ้าไม่ถักไม่ทอ หรือผ้านอนวูฟเวน<br>
         4. เส้นใยไหม (Silk), เส้นใยลินิน (Linen), เส้นใยฝ้าย (Cotton), เส้นใยขนสัตว์ (Wool), ไนลอน
-        (Nylon), โพลีเอสเตอร์ (Polyester), เรยอน (Rayon)<br><b>Treatment</b> : 84</p>
-    
+        (Nylon), โพลีเอสเตอร์ (Polyester), เรยอน (Rayon)<br><b>Treatment</b> : 84<br></p>
+    <h1><br>Assignment 4</h1>
+    <p style = "margin-left: 40px;" class = "textTH" ><b>เนื่องจากข้อมูลไม่เพียงพอจึงเปลี่ยนหัวข้อวิเคราะห์เป็น ราคาทองในแต่ละวัน</b></p>
+    <p style = "margin-left: 40px;" class = "textTH"> <br><b></p></b>
 </body>
 </html>
